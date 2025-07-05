@@ -144,7 +144,7 @@
 &kp CAPS        &none   &none   &none         &none      &none         &kp QUESTION      &kp SLASH        &kp UNDERSCORE  &kp MINUS  &kp PLUS   &kp EQUAL
 &kp LEFT_SHIFT  &none   &none   &none         &none      &none         &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp LBKT        &kp RBKT   &kp PIPE   &kp BSLH
 &kp LCTRL       &none   &none   &none         &none      &none         &kp GREATER_THAN  &kp PERIOD       &kp TILDE       &kp GRAVE  &kp COLON  &kp SEMICOLON
-                                &kp LEFT_ALT  &kp SPACE  &To0_macro    &kp DELETE        &none
+                                &kp LEFT_ALT  &kp SPACE  &To0_macro    &kp DELETE        &kp BACKSPACE
                                               &mkp MB1   &mkp MB2      &kp ENTER
             >;
         };
