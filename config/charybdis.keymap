@@ -90,31 +90,37 @@
         VOLUP {
             bindings = <&kp C_VOL_UP>;
             key-positions = <5 34>;
+            layers = <0>;
         };
 
         VOLDOWN {
             bindings = <&kp C_VOL_DN>;
             key-positions = <5 46>;
+            layers = <0>;
         };
 
         back {
             bindings = <&kp C_AC_BACK>;
             key-positions = <5 45>;
+            layers = <0>;
         };
 
         foward {
             bindings = <&kp C_AC_FORWARD>;
             key-positions = <5 47>;
+            layers = <0>;
         };
 
         deskup {
             bindings = <&Ldesktop>;
             key-positions = <41 45>;
+            layers = <0>;
         };
 
         deskdown {
             bindings = <&Rdesktop>;
             key-positions = <41 47>;
+            layers = <0>;
         };
     };
 
