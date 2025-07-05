@@ -46,6 +46,42 @@
             #binding-cells = <0>;
             bindings = <&rgb_ug RGB_EFF &rgb_ug RGB_COLOR_HSB(250,100,50) &to 2>;
         };
+
+        Ldesktop: nextdesktop {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp LEFT_ARROW>,
+                <&macro_release>,
+                <&kp LEFT_WIN>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "NEXTDESKTOP";
+        };
+
+        Rdesktop: Ldesktop {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp RIGHT_ARROW>,
+                <&macro_release>,
+                <&kp LWIN>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "LDESKTOP";
+        };
     };
 
     combos {
@@ -62,22 +98,22 @@
         };
 
         back {
-            bindings = <&kp K_BACK>;
+            bindings = <&kp C_AC_BACK>;
             key-positions = <5 45>;
         };
 
         foward {
-            bindings = <&kp K_FORWARD>;
+            bindings = <&kp C_AC_FORWARD>;
             key-positions = <5 47>;
         };
 
         deskup {
-            bindings = <&kp LC(LG(LEFT))>;
+            bindings = <&Ldesktop>;
             key-positions = <41 45>;
         };
 
         deskdown {
-            bindings = <&kp LC(LG(RIGHT))>;
+            bindings = <&Rdesktop>;
             key-positions = <41 47>;
         };
     };
