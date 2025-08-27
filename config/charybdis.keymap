@@ -84,6 +84,11 @@
             key-positions = <31 34>;
             layers = <4>;
         };
+
+        Select_All {
+            bindings = <&kp LC(A)>;
+            key-positions = <0 1>;
+        };
     };
 
     behaviors {
