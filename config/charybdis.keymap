@@ -9,7 +9,18 @@
 &lt {
     tapping-term-ms = <200>;
     flavor = "balanced";
-    quick-tap-ms = <150>;
+    quick-tap-ms = <115>;
+    require-prior-idle-ms = <80>;
+    hold-trigger-on-release;
+    hold-trigger-key-positions = <31 34>;
+};
+
+&mt {
+    quick-tap-ms = <115>;
+    require-prior-idle-ms = <50>;
+    flavor = "balanced";
+    hold-trigger-key-positions = <11 12 13 14 30 32 33 16 17 18>;
+    hold-trigger-on-release;
 };
 
 / {
