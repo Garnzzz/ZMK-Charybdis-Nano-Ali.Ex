@@ -37,6 +37,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        LH.Lclick {
+            bindings = <&mkp LCLK>;
+            key-positions = <23 22>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -60,10 +69,10 @@
 
         layer_2 {
             bindings = <
-&none  &none           &none           &none            &none            &none      &none     &none    &none       &none
-&none  &none           &kp UP_ARROW    &none            &kp PAGE_UP      &none      &none     &none    &none       &none
-&none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN    &kp EQUAL  &kp RBKT  &kp SQT  &kp PERIOD  &kp SLASH
-                       &none           &none            &none            &none      &none
+&none           &none           &none           &none            &none            &none      &none     &none    &none       &none
+&none           &none           &kp UP_ARROW    &none            &kp PAGE_UP      &none      &none     &none    &none       &none
+&studio_unlock  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN    &kp EQUAL  &kp RBKT  &kp SQT  &kp PERIOD  &kp SLASH
+                                &none           &none            &none            &none      &none
             >;
         };
 
