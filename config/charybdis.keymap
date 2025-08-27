@@ -86,6 +86,17 @@
         };
     };
 
+    behaviors {
+        sf_shift: sf_shift {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SF_SHIFT";
+            bindings = <&sk>;
+            #binding-cells = <1>;
+            release-after-ms = <1000>;
+            quick-release;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
